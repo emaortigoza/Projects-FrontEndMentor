@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+/* font-family: "Big Shoulders Display", sans-serif;
+font-family: "Lexend Deca", serif; */
+
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);/*paragraphs*/
+    --veryLightGray: hsl(0, 0%, 95%);/*(background, headings, buttons)*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: "Lexend Deca", serif;
+    background: var(--veryLightGray);
+    
+}
+
+.main-container{
+    
+    width: 325px;
+    margin: 87px auto 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+article{
+    width: 100%;
+    height: 440px;
+    padding: 48px;
+}
+#sedans{
+    background-color: var(--brightOrange);
+}
+
+#suvs{
+    background-color: var(--darkCyan);
+}
+
+#luxury{
+    background-color: var(--veryDarkCyan);
+}
+
+img{
+    margin-bottom: 36px; 
+}
+
+h2{
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--veryLightGray);
+    font-size: 2.4em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p{
+    color: var(--transparentWhite);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+button{
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--veryLightGray);
+    font-family: "Lexend Deca", serif; 
+    font-size: 15px;
+}
+
+#sedans-btn{
+    color: var(--brightOrange);
+}
+#suvs-btn{
+    color: var(--darkCyan);
+}
+#luxury{
+    color: var(--veryDarkCyan);
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid var(--veryLightGray);
+}
+#sedans-btn:hover{
+    background-color: var(--brightOrange);
+    color: var(--veryLightGray);
+}
+#suvs-btn:hover{
+    background-color: var(--darkCyan);
+    color: var(--veryLightGray);
+}
+#luxury-btn:hover{
+    background-color: var(--veryDarkCyan);
+    color: var(--veryLightGray);
+}
+
+/*---------------------------------------*/
+@media (min-width:994px){
+    .main-container{
+        width: 924px;
+        display: flex;
+        margin-top: 170px;
+    }
+    article{
+        height: 500px;
+    }
+    p{
+        margin-bottom: 80px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
